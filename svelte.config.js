@@ -2,9 +2,7 @@ import adapter from '@sveltejs/adapter-node';
 
 export default {
   kit: {
-    adapter: adapter({
-      out: 'build',
-    }),
+    adapter: adapter(),
     experimental: {
       remoteFunctions: true,
     },
@@ -13,8 +11,5 @@ export default {
     experimental: {
       async: true,
     },
-  },
-  vitePlugin: {
-    inspector: true,
-  },
+  }
 };
